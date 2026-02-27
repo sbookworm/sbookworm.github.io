@@ -4,13 +4,6 @@ baseurl: ""
 url: "https://sbookworm.github.io"
 github: "https://github.com/sbookworm"
 
-theme: minima
+theme: jekyll-theme-minimal
 
 permalink: /:year/:month/:day/:title/
-
-sass:
-  sass_dir: assets/css
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
