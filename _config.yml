@@ -7,3 +7,10 @@ github: "https://github.com/sbookworm"
 theme: minima
 
 permalink: /:year/:month/:day/:title/
+
+sass:
+  sass_dir: assets/css
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
