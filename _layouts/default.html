@@ -7,188 +7,162 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-            background: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.7;
             min-height: 100vh;
         }
         .container {
-            display: flex;
-            max-width: 1100px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 40px 20px;
-            gap: 40px;
+            padding: 60px 20px;
         }
-        /* 左边栏 */
-        .sidebar {
-            width: 280px;
-            flex-shrink: 0;
+        /* 顶部 */
+        .header {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #222;
         }
-        .profile-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 40px;
-        }
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-        }
-        .profile-card h1 {
-            font-size: 22px;
-            color: #333;
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #fff;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
-        .profile-card .bio {
+        .header .subtitle {
             color: #666;
             font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 20px;
         }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .header a {
+            color: #666;
             text-decoration: none;
-            font-size: 18px;
-            transition: all 0.3s;
+            transition: color 0.2s;
         }
-        .social-links a:hover {
-            background: #667eea;
-            transform: translateY(-3px);
+        .header a:hover { color: #fff; }
+        /* 文章列表 */
+        .post-list { list-style: none; }
+        .post-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #1a1a1a;
         }
-        /* 右边内容 */
-        .main-content {
-            flex: 1;
-            min-width: 0;
-        }
-        .post {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .post:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
+        .post-item:last-child { border-bottom: none; }
         .post-title {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
         }
         .post-title a {
-            color: #333;
+            color: #e5e5e5;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
-        .post-title a:hover { color: #667eea; }
+        .post-title a:hover { color: #fff; }
         .post-meta {
-            display: flex;
-            gap: 15px;
-            color: #999;
             font-size: 13px;
-            margin-bottom: 18px;
+            color: #555;
         }
+        .post-meta .date { margin-right: 15px; }
         .post-tag {
-            background: #f0f0f8;
-            color: #667eea;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-        }
-        .post-content { color: #444; line-height: 1.85; }
-        .post-content a { color: #667eea; }
-        .post-content h2 { color: #333; margin: 25px 0 15px; font-size: 20px; }
-        .post-content h3 { color: #444; margin: 20px 0 12px; font-size: 17px; }
-        .post-content code {
-            background: #f5f5f5;
+            color: #888;
+            background: #151515;
             padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        /* 文章页 */
+        .post-content { margin-top: 40px; }
+        .post-content h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+        .post-content .post-header-meta {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #222;
+        }
+        .post-content h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 35px 0 15px;
+            color: #fff;
+        }
+        .post-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 25px 0 12px;
+            color: #ddd;
+        }
+        .post-content p { margin: 15px 0; color: #bbb; }
+        .post-content a { color: #888; text-decoration: underline; }
+        .post-content a:hover { color: #fff; }
+        .post-content code {
+            background: #151515;
+            padding: 2px 6px;
             border-radius: 4px;
             font-size: 14px;
             font-family: "SF Mono", Monaco, monospace;
+            color: #e5e5e5;
         }
         .post-content pre {
-            background: #2d2d2d;
-            color: #f8f8f2;
+            background: #111;
+            border: 1px solid #222;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow-x: auto;
-            font-size: 14px;
-            line-height: 1.6;
+            margin: 20px 0;
         }
-        .post-content pre code { background: none; padding: 0; color: inherit; }
-        .post-content ul, .post-content ol { margin: 15px 0; padding-left: 25px; }
+        .post-content pre code { background: none; padding: 0; border: none; }
+        .post-content ul, .post-content ol { margin: 15px 0; padding-left: 25px; color: #bbb; }
         .post-content li { margin: 8px 0; }
-        .read-more {
-            display: inline-block;
-            margin-top: 15px;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
+        .post-content strong { color: #fff; }
+        .post-content blockquote {
+            border-left: 3px solid #333;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #777;
         }
-        .read-more:hover { text-decoration: underline; }
-        /* 页脚 */
+        /* 底部 */
         .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #222;
+            color: #444;
+            font-size: 13px;
             text-align: center;
-            color: #999;
+        }
+        .footer a { color: #555; text-decoration: none; }
+        .footer a:hover { color: #888; }
+        /* 返回按钮 */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #555;
+            text-decoration: none;
             font-size: 14px;
-            padding: 30px 0;
-            border-top: 1px solid #eee;
-            margin-top: 40px;
         }
-        /* 移动端 */
-        @media (max-width: 768px) {
-            .container { flex-direction: column; }
-            .sidebar { width: 100%; }
-            .profile-card { position: static; }
-        }
+        .back-link:hover { color: #888; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="profile-card">
-                <div class="avatar">SL</div>
-                <h1>Song Li</h1>
-                <p class="bio">读书、编程、思考<br>欢迎来到我的精神角落</p>
-                <div class="social-links">
-                    <a href="https://github.com/sbookworm" title="GitHub">🐙</a>
-                    <a href="mailto:sbookworm@gmail.com" title="Email">📧</a>
-                </div>
-            </div>
+        <div class="header">
+            <h1><a href="/">小火</a></h1>
+            <p class="subtitle">读书、编程、思考</p>
         </div>
-        
-        <div class="main-content">
-            {{ content }}
+
+        {{ content }}
+
+        <div class="footer">
+            © 2026 小火 · <a href="https://github.com/sbookworm/sbookworm.github.io">GitHub</a>
         </div>
-    </div>
-    
-    <div class="footer">
-        © 2026 Song Li · 用 ❤️ 搭建
     </div>
 </body>
 </html>
