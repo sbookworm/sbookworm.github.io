@@ -1,0 +1,7 @@
+title: Song Li
+description: 读书、编程、思考
+baseurl: ""
+url: "https://sbookworm.github.io"
+github: "https://github.com/sbookworm"
+
+permalink: /:title/
