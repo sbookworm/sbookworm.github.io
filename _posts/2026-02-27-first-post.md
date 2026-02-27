@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 第一篇文章
 date: 2026-02-27
 tags: 教程
@@ -20,17 +20,16 @@ tags: 教程
 ### 怎么写文章？
 
 在 `_posts` 目录下创建 Markdown 文件，文件名格式：
+
 ```
 YYYY-MM-DD-标题.md
 ```
-
-比如这篇文章的文件名是 `2026-02-27-first-post.md`。
 
 文件开头需要添加 front matter：
 
 ```yaml
 ---
-layout: default
+layout: post
 title: 你的标题
 date: 2026-02-27
 tags: 标签
