@@ -3,32 +3,16 @@ layout: default
 title: 首页
 ---
 
-<div class="post">
-    <h2 class="post-title"><a href="/2026/02/27/first-post/">欢迎来到我的博客</a></h2>
-    <div class="post-meta">
-        <span>📅 2026年2月27日</span>
-        <span class="post-tag">随笔</span>
-    </div>
-    <div class="post-content">
-        <p>你好！我是 Song Li。</p>
-        <p>这个博客用来记录我的学习笔记和思考。</p>
-        <p>如果你也喜欢读书、编程，欢迎关注我 👋</p>
-        <a href="/2026/02/27/first-post/" class="read-more">阅读全文 →</a>
-    </div>
-</div>
-
+<ul class="post-list">
 {% for post in site.posts %}
-<div class="post">
+<li class="post-item">
     <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="post-meta">
-        <span>📅 {{ post.date | date: "%Y年%m月%d日" }}</span>
+        <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
         {% if post.tags %}
         <span class="post-tag">{{ post.tags[0] }}</span>
         {% endif %}
     </div>
-    <div class="post-content">
-        {{ post.excerpt }}
-        <a href="{{ post.url }}" class="read-more">阅读全文 →</a>
-    </div>
-</div>
+</li>
 {% endfor %}
+</ul>
