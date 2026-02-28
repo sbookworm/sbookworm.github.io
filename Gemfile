@@ -1,3 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.0"
+gem "jekyll"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
+gem "jekyll-feed"
+gem "minima"
+gem "jekyll-theme-chirpy"

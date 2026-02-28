@@ -1,7 +1,21 @@
-title: Song Li
-description: 读书、编程、思考
+# Chirpy Theme - 使用 remote_theme
 remote_theme: cotes2020/jekyll-theme-chirpy
 
-# GitHub Pages 默认配置
-markdown: kramdown
-theme: jekyll-theme-chirpy
+lang: zh-CN
+timezone: Asia/Shanghai
+
+title: Song Li
+tagline: 读书、编程、思考
+description: 个人博客
+
+url: "https://sbookworm.github.io"
+github:
+  username: sbookworm
+
+social:
+  name: Song Li
+  email: sbookworm@gmail.com
+  links:
+    - https://github.com/sbookworm
+
+theme_mode: dark
