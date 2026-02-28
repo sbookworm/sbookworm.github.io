@@ -1,5 +1,7 @@
-# Welcome
+---
+layout: home
 
-This is my GitHub Pages blog!
+title: 首页
+---
 
-- [Read my posts](/posts/)
+欢迎来到我的博客！
