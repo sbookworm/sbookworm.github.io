@@ -1,5 +1,12 @@
-# Chirpy Theme - 使用 remote_theme
+# Chirpy Theme
 remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Required plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-minifier
 
 lang: zh-CN
 timezone: Asia/Shanghai
