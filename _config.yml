@@ -4,6 +4,6 @@ baseurl: ""
 url: "https://sbookworm.github.io"
 github: "https://github.com/sbookworm"
 
-theme: jekyll-theme-cayman
+theme: minima
 
 permalink: /:year/:month/:day/:title/
