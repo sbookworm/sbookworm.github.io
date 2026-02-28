@@ -39,7 +39,7 @@ social:
 # The end of `jekyll-seo-tag` settings
 
 # Prefer color scheme setting.
-theme_mode: dark
+theme_mode: light
 
 # The CDN endpoint for media resources.
 # cdn:
