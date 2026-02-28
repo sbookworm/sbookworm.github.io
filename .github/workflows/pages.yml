@@ -28,6 +28,12 @@ jobs:
         with:
           ruby-version: 3.2
           bundler-cache: true
+          cache-version: 1
+
+      - name: Install dependencies
+        run: |
+          gem install jekyll
+          gem install jekyll-remote-theme
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
