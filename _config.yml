@@ -1,4 +1,4 @@
-# Chirpy Theme Configuration
+# Chirpy Theme
 theme: jekyll-theme-chirpy
 
 lang: zh-CN
@@ -6,6 +6,7 @@ timezone: Asia/Shanghai
 
 title: Song Li
 tagline: 读书、编程、思考
+description: 个人博客
 
 url: "https://sbookworm.github.io"
 github:
@@ -17,8 +18,10 @@ social:
   links:
     - https://github.com/sbookworm
 
+avatar: /commons/avatar.jpg
+
 theme_mode: dark
 
-# 关闭评论（可选）
+# 简化配置
 comments:
   provider:
