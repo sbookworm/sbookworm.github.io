@@ -1,3 +1,12 @@
 title: Song Li
 description: 读书、编程、思考
-theme: jekyll-theme-minimal
+url: "https://sbookworm.github.io"
+github: "https://github.com/sbookworm"
+
+remote_theme: chirpy/jekyll-theme-chirpy
+timezone: Asia/Shanghai
+
+permalink: /:title/
+
+jekyll_opts:
+  - --quiet
