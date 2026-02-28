@@ -1,12 +1,24 @@
-title: Song Li
-description: 读书、编程、思考
-url: "https://sbookworm.github.io"
-github: "https://github.com/sbookworm"
+# Chirpy Theme Configuration
+theme: jekyll-theme-chirpy
 
-remote_theme: chirpy/jekyll-theme-chirpy
+lang: zh-CN
 timezone: Asia/Shanghai
 
-permalink: /:title/
+title: Song Li
+tagline: 读书、编程、思考
 
-jekyll_opts:
-  - --quiet
+url: "https://sbookworm.github.io"
+github:
+  username: sbookworm
+
+social:
+  name: Song Li
+  email: sbookworm@gmail.com
+  links:
+    - https://github.com/sbookworm
+
+theme_mode: dark
+
+# 关闭评论（可选）
+comments:
+  provider:
