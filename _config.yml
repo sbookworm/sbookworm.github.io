@@ -1,5 +1,5 @@
-# Chirpy Theme
-theme: jekyll-theme-chirpy
+# Chirpy Theme - 使用 remote_theme
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 lang: zh-CN
 timezone: Asia/Shanghai
@@ -18,10 +18,4 @@ social:
   links:
     - https://github.com/sbookworm
 
-avatar: /commons/avatar.jpg
-
 theme_mode: dark
-
-# 简化配置
-comments:
-  provider:
