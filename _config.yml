@@ -1,0 +1,7 @@
+title: Song Li
+description: 读书、编程、思考
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# GitHub Pages 默认配置
+markdown: kramdown
+theme: jekyll-theme-chirpy
