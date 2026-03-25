@@ -2,7 +2,7 @@
 layout: post
 title: Claude Code 速查表
 date: 2026-03-25 10:00:00
-categories: [随想]
+categories: [快速连接]
 tags: [Claude Code, AI, 工具]
 ---
 
