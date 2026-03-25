@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Claude Code 速查表
-date: 2026-03-25 16:45:00
+date: 2026-03-25 08:00:00
 categories: [工具]
 tags: [Claude Code, 速查表, AI工具]
 ---
