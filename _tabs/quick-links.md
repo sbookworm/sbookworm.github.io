@@ -9,4 +9,4 @@ order: 2
 
 快速查阅 Claude Code 的快捷键、命令和配置。
 
-📖 [**阅读全文：Claude Code 速查表**](/posts/Claude-Code-速查表/)
+📖 [**阅读全文：Claude Code 速查表**](/posts/claude-code-cheatsheet/)
