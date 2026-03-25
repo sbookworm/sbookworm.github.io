@@ -41,4 +41,4 @@ order: 4
 
 ---
 
-📝 完整速查表请查看：[Claude Code 速查表文章](/posts/Claude%20Code%20速查表/)
+📝 完整速查表请查看：[Claude Code 速查表文章](/posts/Claude-Code-速查表/)
