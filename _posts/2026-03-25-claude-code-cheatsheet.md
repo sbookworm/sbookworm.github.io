@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: Claude Code 速查表
-permalink: /claude-code-cheatsheet/
+date: 2026-03-25 10:00:00
+categories: [随想]
+tags: [Claude Code, AI, 工具]
 ---
 
 <style>
@@ -9,9 +11,9 @@ permalink: /claude-code-cheatsheet/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.5;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .cheatsheet-grid {
