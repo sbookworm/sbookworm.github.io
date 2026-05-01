@@ -11,6 +11,7 @@ order: 2
 ### 系列文章
 
 1. [前言：一个体系结构工程师的 LLM 学习之路](/posts/preface-engineers-llm-journey/)
+2. [LLM 入门知识 — Ollama](/posts/ollama-local-llm-runner/)
 
 ---
 学习中难免会理解有错误，欢迎大家斧正。
