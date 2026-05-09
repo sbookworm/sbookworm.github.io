@@ -1,9 +1,10 @@
 ---
-title: "Transformer位置编码原理：为什么Attention需要位置信息"
+title: "Transformer知识-位置编码"
 date: 2025-05-09
 categories: [llm-study]
 tags: [LLM学习记录, Transformer, 位置编码, Self-Attention]
 toc: true
+permalink: /llm-study/transform-knowledge-positional-encoding/
 ---
 
 ## 为什么需要位置编码？
