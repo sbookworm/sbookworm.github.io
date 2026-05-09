@@ -13,6 +13,7 @@ order: 2
 1. [前言：一个体系结构工程师的 LLM 学习之路](/posts/preface-engineers-llm-journey/)
 2. [LLM 入门知识 — Ollama](/posts/ollama-local-llm-runner/)
 3. [Transformer知识-位置编码](/llm-study/transform-knowledge-positional-encoding/)
+4. [LLM入门知识-位置编码外推](/llm-study/llm-positional-encoding-extrapolation/)
 
 ---
 学习中难免会理解有错误，欢迎大家斧正。
