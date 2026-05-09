@@ -7,7 +7,7 @@ toc: true
 permalink: /llm-study/llm-positional-encoding-extrapolation/
 ---
 
-# LLM 位置编码外推（Extrapolation）
+# LLM入门知识-位置编码外推
 
 ## 什么是外推？
 
