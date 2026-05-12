@@ -6,8 +6,6 @@ tags: [LLM学习记录, Agent, Skills, Context, Claude Code, 上下文]
 toc: true
 permalink: /llm-study/skill-not-the-more-the-better/
 ---
-# SKILL并不是多多益善
-
 > Context 是珍贵资源，不是垃圾桶。
 
 ---
