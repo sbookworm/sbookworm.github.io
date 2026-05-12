@@ -1,13 +1,12 @@
 ---
-title: "你的 Agent 正在被 Skills 淹没：为什么'装越多越好'是个危险的误区"
+title: "SKILL并不是多多益善"
 date: 2026-05-12
 categories: [llm-study]
 tags: [LLM学习记录, Agent, Skills, Context, Claude Code, 上下文]
 toc: true
-permalink: /llm-study/agent-skills-context-overload/
+permalink: /llm-study/skill-not-the-more-the-better/
 ---
-
-# 你的 Agent 正在被 Skills 淹没：为什么"装越多越好"是个危险的误区
+# SKILL并不是多多益善
 
 > Context 是珍贵资源，不是垃圾桶。
 
