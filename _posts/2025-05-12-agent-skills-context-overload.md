@@ -2,11 +2,11 @@
 title: 你的 Agent 正在被 Skills 淹没：为什么"装越多越好"是个危险的误区
 date: 2025-05-12
 categories: [llm-study]
-tags: [Agent, Skills, Claude Code, 上下文, Superpowers]
+tags: [LLM学习记录, Agent, Skills, Context, Claude Code, 上下文]
+toc: true
+permalink: /llm-study/skill-not-the-more-the-better/
 author: 李
 ---
-
-你的 Agent 正在被 Skills 淹没：为什么"装越多越好"是个危险的误区
 
 > Context 是珍贵资源，不是垃圾桶。
 
