@@ -1,7 +1,7 @@
 ---
 title: 从Transformer到LLM：一场"断臂求生"的架构革命
 date: 2025-05-13
-categories: LLM
+categories: [llm-study]
 tags: [Transformer, LLM, 架构, Encoder, Decoder, GPT]
 author: 李
 ---
