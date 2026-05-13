@@ -16,5 +16,6 @@ order: 2
 4. [LLM入门知识-位置编码外推](/llm-study/llm-positional-encoding-extrapolation/)
 5. [LLM 为什么会有上下文限制？](/llm-study/llm-context-window-limit/)
 6. [从Transformer到LLM：一场"断臂求生"的架构革命](/llm-study/transformer-decoder-only-llm/)
+7. [你的 Agent 正在被 Skills 淹没：为什么"装越多越好"是个危险的误区](/llm-study/skill-not-the-more-the-better/)
 
 学习中难免会理解有错误，欢迎大家斧正。
