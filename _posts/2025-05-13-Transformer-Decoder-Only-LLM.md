@@ -1,7 +1,7 @@
 ---
 title: 从Transformer到LLM：一场"断臂求生"的架构革命
 date: 2025-05-13
-categories: [llm-study]
+categories: LLM
 tags: [Transformer, LLM, 架构, Encoder, Decoder, GPT]
 author: 李
 ---
@@ -89,8 +89,8 @@ Transformer最早是为了**机器翻译**设计的。翻译这件事，本质�
 | 对比维度      | 原始Transformer（Encoder-Decoder） | 现代LLM（Decoder-Only）       |
 | --------- | ------------------------------ | ------------------------- |
 | **设计初衷**  | 机器翻译等Seq2Seq任务                 | 大规模语言模型（续写/对话）            |
-| **输入处理**  | Encoder先完整理解输入，再交给Decoder      | 输入和输出一起处理，输入部分双向理解，生成部分单向 |
-| **注意力方向** | Encoder双向；Decoder单向（只能看之前）     | 输入双向；输出生成时单向              |
+| **输入处理**  | Encoder先对输入进行双向编码，再通过Cross Attention传递给Decoder | 输入（prompt）与输出组成统一序列，整个序列单向处理 |
+| **注意力方向** | Encoder双向（intra-masked）；Decoder单向（causal masked） | 统一单向（causal masked），prompt内部及生成都遵循因果约束 |
 | **交叉注意力** | 有（Decoder"参考"Encoder的输出）       | 无                         |
 | **典型应用**  | 翻译、摘要、问答（需要理解+生成）              | 聊天、写作、代码生成、推理             |
 | **扩展规律**  | 规模收益有上限                        | 大力出奇迹，Scaling Law效果显著     |
