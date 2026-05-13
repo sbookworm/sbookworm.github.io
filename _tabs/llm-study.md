@@ -15,7 +15,6 @@ order: 2
 3. [Transformer知识-位置编码](/llm-study/transform-knowledge-positional-encoding/)
 4. [LLM入门知识-位置编码外推](/llm-study/llm-positional-encoding-extrapolation/)
 5. [LLM 为什么会有上下文限制？](/llm-study/llm-context-window-limit/)
-
----
+6. [从Transformer到LLM：一场"断臂求生"的架构革命](/llm-study/transformer-decoder-llm-architecture/)
 
 学习中难免会理解有错误，欢迎大家斧正。
