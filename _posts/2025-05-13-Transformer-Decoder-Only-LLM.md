@@ -4,6 +4,7 @@ date: 2025-05-13
 categories: [llm-study]
 tags: [Transformer, LLM, 架构, Encoder, Decoder, GPT]
 author: 李
+permalink: /llm-study/transformer-decoder-only-llm/
 ---
 
 2017年，Google发表了一篇论文，标题很霸气——**《Attention Is All You Need》**。这篇论文推出了一个叫**Transformer**的模型结构，直接奠定了往后七年所有大语言模型（LLM）的根基。
