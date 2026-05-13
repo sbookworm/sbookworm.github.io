@@ -1,10 +1,9 @@
 ---
 title: 从Transformer到LLM：一场"断臂求生"的架构革命
 date: 2025-05-13
-categories: [llm-study]
-tags: [LLM学习记录, Transformer, LLM, 架构, Encoder, Decoder, GPT]
-toc: true
-permalink: /llm-study/transformer-decoder-llm-architecture/
+categories: LLM
+tags: [Transformer, LLM, 架构, Encoder, Decoder, GPT]
+author: 李
 ---
 
 2017年，Google发表了一篇论文，标题很霸气——**《Attention Is All You Need》**。这篇论文推出了一个叫**Transformer**的模型结构，直接奠定了往后七年所有大语言模型（LLM）的根基。
@@ -52,8 +51,8 @@ Transformer最早是为了**机器翻译**设计的。翻译这件事，本质�
        ↓
   ┌─────────────────────┐
   │   Decoder 堆叠 (N层) │  ← 生成译文：一个词一个词往外蹦
-  │  • Masked Attention │  ← 只能看之前生成的词
-  │  • Cross Attention  │  ← 参考Encoder的理解结果
+  │  • Masked Self-Attention │  ← 只能看之前生成的词
+  │  • Cross Attention       │  ← 参考Encoder的理解结果
   │  • Feed-Forward     │
   └─────────────────────┘
        ↓
@@ -62,9 +61,9 @@ Transformer最早是为了**机器翻译**设计的。翻译这件事，本质�
 
 ## 二、GPT时代：只留一半，反而更强
 
-时间来到2018-2019年，OpenAI的GPT-1、GPT-2，以及Google的BERT相继问世。它们都不约而同地**只使用了Transformer的解码器（Decoder）部分**，把编码器彻底扔掉了。
+时间来到2018-2019年，OpenAI的GPT-1、GPT-2，以及Google的BERT相继问世。它们都不约而同地**只用了Transformer的一半**。
 
-BERT用的是编码器（Encoder），走的是"完形填空"路线；GPT系列用的是解码器（Decoder），走的是"续写"路线。后来证明，**纯解码器架构更适合Scaling Up**——模型越大，效果越好，这条路最终走出了ChatGPT和GPT-4。
+**BERT用的是编码器（Encoder-Only）**，走的是"遮词预测"路线（Masked Language Model）；**GPT系列用的是解码器（Decoder-Only）**，走的是"续写"路线。后来证明，**纯解码器架构更适合Scaling Up**——模型越大，效果越好，这条路最终走出了ChatGPT和GPT-4。
 
 ```
 纯解码器（Decoder-Only）架构
@@ -72,12 +71,10 @@ BERT用的是编码器（Encoder），走的是"完形填空"路线；GPT系列�
   输入: "从前有座山，"
        ↓
   ┌─────────────────────┐
-  │  Decoder 堆叠 (N层)  │  ← 所有层都是"自己看自己"
-  │  • Masked Attention │    （只能看之前生成的词）
-  │  • Feed-Forward     │
-  │  • Masked Attention │
-  │  • Feed-Forward     │
-  │         ...         │
+  │  Decoder 堆叠 (N层)  │  ← 每层结构相同
+  │  • Masked Self-Attention │  ← 只能看之前的token
+  │  • Feed-Forward          │
+  │         ...              │
   └─────────────────────┘
        ↓
   输出: "山上有个庙，庙里有个老和尚在讲故事……"
@@ -92,8 +89,8 @@ BERT用的是编码器（Encoder），走的是"完形填空"路线；GPT系列�
 | 对比维度 | 原始Transformer（Encoder-Decoder） | 现代LLM（Decoder-Only） |
 |------|------|------|
 | **设计初衷** | 机器翻译等Seq2Seq任务 | 大规模语言模型（续写/对话） |
-| **输入处理** | Encoder先完整理解输入，再交给Decoder | 输入和输出一起塞进Decoder，顺序处理 |
-| **注意力方向** | Encoder双向（前后都能看）；Decoder单向（只能看之前） | 全局单向（生成时只能看历史） |
+| **输入处理** | Encoder先完整理解输入，再交给Decoder | 输入和输出一起处理，输入部分双向理解，生成部分单向 |
+| **注意力方向** | Encoder双向；Decoder单向（只能看之前） | 输入双向；输出生成时单向 |
 | **交叉注意力** | 有（Decoder"参考"Encoder的输出） | 无 |
 | **典型应用** | 翻译、摘要、问答（需要理解+生成） | 聊天、写作、代码生成、推理 |
 | **扩展规律** | 规模收益有上限 | 大力出奇迹，Scaling Law效果显著 |
@@ -102,7 +99,7 @@ BERT用的是编码器（Encoder），走的是"完形填空"路线；GPT系列�
 
 ### 1. 架构统一，训练更简单
 
-Encoder-Decoder结构实际上是**两个模型拼在一起**：前面一个理解，后面一个生成。训练的时候也要分别训练，流程复杂。
+Encoder-Decoder结构包含**两个模块**：Encoder负责理解输入，Decoder负责生成输出。虽然是一个整体模型，但训练时需要同时优化两个模块的协同，流程相对复杂。
 
 纯Decoder只有一个模块，它的任务是**给定一段文本，预测下一个词**。这个任务简单粗暴，也叫**语言建模（Language Modeling）**——整个互联网的文本都能用来训练，天然就适合大数据。
 
@@ -116,7 +113,7 @@ Encoder-Decoder结构实际上是**两个模型拼在一起**：前面一个理�
 
 当你把模型从10亿参数扩展到1000亿参数时，**架构的简洁性**至关重要。Decoder-Only没有Encoder-Decoder之间的复杂交互，参数利用率更高，也更容易分布式训练。
 
-OpenAI在GPT-2之后就发现：只要数据够多、模型够大、训练够久，纯Decoder架构的"续写"能力可以涌现出惊人的智能——包括Few-shot学习、推理能力、甚至思维链。
+OpenAI在GPT-2之后就发现：只要数据够多、模型够大、训练够久，纯Decoder架构的"续写"能力可以涌现出惊人的智能——包括上下文学习（In-context Learning）和推理能力的萌芽。
 
 ### 3. 生成质量更高
 
@@ -124,7 +121,7 @@ Decoder-Only架构有一个内在优势：**它训练时的任务和推理时的
 
 ## 五、总结：一句话说明白
 
-原始Transformer是一个为**翻译**量身定制的双塔结构（Encoder + Decoder），而现代LLM只保留了Decoder这一半，把它训练成一个**超级"文字接龙"高手**。
+原始Transformer是一个为**翻译**量身定制的双塔结构（Encoder + Decoder），而以GPT为代表的生成式LLM只保留了Decoder这一半，把它训练成一个**超级"文字接龙"高手**。
 
 这个"断臂"并不是退化，而是一次**战略聚焦**：放弃通用翻译的幻想，专心把"续写"这件事做到极致——然后发现，当续写能力足够强时，它几乎能做所有事情：聊天、编程、写作、分析、推理……
 
