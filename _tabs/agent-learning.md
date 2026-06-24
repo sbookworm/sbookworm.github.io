@@ -8,6 +8,8 @@ order: 2
 
 ### 系列文章
 
-（文章待添加）
+1. [€0.02 转账劫持银行 AI 助手：Blue41/Bunq 间接提示注入案例学习](/llm-study/blue41-bunq-prompt-injection/)
 
 ---
+
+> Agent 越强，攻击面越大——这是 LLM 时代所有"特权助手"必须直面的安全真相。
