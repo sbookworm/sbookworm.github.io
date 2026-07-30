@@ -9,6 +9,7 @@ order: 2
 ### 系列文章
 
 1. [€0.02 转账劫持银行 AI 助手：Blue41/Bunq 间接提示注入案例学习](/llm-study/blue41-bunq-prompt-injection/)
+2. [AI 会不会在没有后果时也装乖？——《Do Models Fake Alignment Without Clear Consequences?》通俗拆解](/agent-learning/alignment-faking-without-consequences/)
 
 ---
 
