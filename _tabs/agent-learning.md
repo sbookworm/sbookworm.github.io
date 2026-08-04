@@ -11,6 +11,7 @@ order: 2
 1. [€0.02 转账劫持银行 AI 助手：Blue41/Bunq 间接提示注入案例学习](/llm-study/blue41-bunq-prompt-injection/)
 2. [AI 会不会在没有后果时也装乖？——《Do Models Fake Alignment Without Clear Consequences?》通俗拆解](/agent-learning/alignment-faking-without-consequences/)
 3. [AI 红队攻击图谱：从手工越狱到 Agent 多步攻击](/agent-learning/ai-red-team-attack-map/)
+4. [当 AI 开始"撒谎作弊"：奖励黑客、学术解法与工程护栏](/agent-learning/ai-agent-reward-hacking-engineering-guardrails/)
 
 ---
 
