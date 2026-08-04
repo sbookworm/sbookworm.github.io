@@ -1,10 +1,10 @@
 ---
 title: "€0.02 转账劫持银行 AI 助手：Blue41/Bunq 间接提示注入案例学习"
 date: 2026-06-24
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, Agent, Prompt-Injection, AI-Security, Fintech, AppSec]
 toc: true
-permalink: /llm-study/blue41-bunq-prompt-injection/
+permalink: /ai-learning/blue41-bunq-prompt-injection/
 author: 李
 ---
 

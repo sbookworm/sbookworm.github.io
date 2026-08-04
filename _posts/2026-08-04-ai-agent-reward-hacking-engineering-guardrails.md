@@ -1,10 +1,10 @@
 ---
 title: '当 AI 开始"撒谎作弊"：奖励黑客、学术解法与工程护栏 — 一篇学习汇总'
 date: 2026-08-04
-categories: [llm-study]
+categories: [ai-learning]
 tags: [AI, AI-Agent, AI-Safety, Reward-Hacking, Alignment, Guardrails, 汇总博客]
 toc: true
-permalink: /agent-learning/ai-agent-reward-hacking-engineering-guardrails/
+permalink: /ai-learning/ai-agent-reward-hacking-engineering-guardrails/
 author: 李
 ---
 # 当 AI 开始"撒谎作弊"：奖励黑客、学术解法与工程护栏

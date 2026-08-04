@@ -1,9 +1,10 @@
 ---
 title: "前言：一个体系结构工程师的 LLM 学习之路"
 date: 2026-05-01
-categories: [llm-study]
+categories: [ai-learning]
 tags: [前言，随笔]
 toc: true
+permalink: /ai-learning/preface-engineers-llm-journey/
 ---
 
 我是个搞计算机体系结构的，平时主要跟代码、数据库、大数据等等打交道。

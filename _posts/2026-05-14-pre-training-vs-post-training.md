@@ -1,10 +1,10 @@
 ---
 title: "预训练与后训练"
 date: 2026-05-14
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, 预训练, 后训练, SFT, RLHF, 对齐]
 toc: true
-permalink: /llm-study/pre-training-vs-post-training/
+permalink: /ai-learning/pre-training-vs-post-training/
 ---
 
 # 预训练与后训练

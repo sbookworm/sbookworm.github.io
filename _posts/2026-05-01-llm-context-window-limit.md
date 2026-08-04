@@ -1,10 +1,10 @@
 ---
 title: "LLM 为什么会有上下文限制？"
 date: 2026-05-01
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, Transformer, 架构分析, Attention, KV Cache, RoPE]
 toc: true
-permalink: /llm-study/llm-context-window-limit/
+permalink: /ai-learning/llm-context-window-limit/
 ---
 
 # LLM 为什么会有上下文限制？

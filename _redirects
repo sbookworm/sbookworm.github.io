@@ -1,0 +1,15 @@
+# Auto-generated redirects after merging llm-study + agent-learning -> ai-learning
+# GitHub Pages _redirects format: single space between source and destination
+# Generated 2026-08-04
+
+/llm-study/transform-knowledge-positional-encoding/ /ai-learning/transform-knowledge-positional-encoding/
+/llm-study/skill-not-the-more-the-better/ /ai-learning/skill-not-the-more-the-better/
+/llm-study/transformer-decoder-only-llm/ /ai-learning/transformer-decoder-only-llm/
+/llm-study/llm-context-window-limit/ /ai-learning/llm-context-window-limit/
+/llm-study/llm-positional-encoding-extrapolation/ /ai-learning/llm-positional-encoding-extrapolation/
+/llm-study/pre-training-vs-post-training/ /ai-learning/pre-training-vs-post-training/
+/llm-study/niah-nolima-eval/ /ai-learning/niah-nolima-eval/
+/llm-study/blue41-bunq-prompt-injection/ /ai-learning/blue41-bunq-prompt-injection/
+/agent-learning/ai-red-team-attack-map/ /ai-learning/ai-red-team-attack-map/
+/agent-learning/alignment-faking-without-consequences/ /ai-learning/alignment-faking-without-consequences/
+/agent-learning/ai-agent-reward-hacking-engineering-guardrails/ /ai-learning/ai-agent-reward-hacking-engineering-guardrails/

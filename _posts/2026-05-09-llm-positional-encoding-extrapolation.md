@@ -1,10 +1,10 @@
 ---
 title: "LLM入门知识-位置编码外推"
 date: 2026-05-09
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, 位置编码, 外推, RoPE, ALiBi]
 toc: true
-permalink: /llm-study/llm-positional-encoding-extrapolation/
+permalink: /ai-learning/llm-positional-encoding-extrapolation/
 ---
 
 # LLM入门知识-位置编码外推

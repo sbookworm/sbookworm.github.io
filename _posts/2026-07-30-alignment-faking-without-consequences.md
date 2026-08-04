@@ -1,10 +1,10 @@
 ---
 title: "AI 会不会在没有后果时也装乖？——《Do Models Fake Alignment Without Clear Consequences?》通俗拆解"
 date: 2026-07-30
-categories: [llm-study]
+categories: [ai-learning]
 tags: [AI安全, 对齐伪装, alignment-faking, 模型评估, Agent安全, FAGEN]
 toc: true
-permalink: /agent-learning/alignment-faking-without-consequences/
+permalink: /ai-learning/alignment-faking-without-consequences/
 author: 李
 ---
 

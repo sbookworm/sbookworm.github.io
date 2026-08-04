@@ -1,10 +1,10 @@
 ---
 title: 你的 Agent 正在被 Skills 淹没：为什么"装越多越好"是个危险的误区
 date: 2025-05-12
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, Agent, Skills, Context, Claude Code, 上下文]
 toc: true
-permalink: /llm-study/skill-not-the-more-the-better/
+permalink: /ai-learning/skill-not-the-more-the-better/
 author: 李
 ---
 

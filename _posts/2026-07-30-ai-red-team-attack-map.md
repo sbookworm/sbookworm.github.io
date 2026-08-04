@@ -1,10 +1,10 @@
 ---
 title: "AI 红队攻击图谱：从手工越狱到 Agent 多步攻击"
 date: 2026-07-30
-categories: [llm-study]
+categories: [ai-learning]
 tags: [AI安全, 红队测试, Jailbreak, PromptInjection, Agent安全, 多模态安全]
 toc: true
-permalink: /agent-learning/ai-red-team-attack-map/
+permalink: /ai-learning/ai-red-team-attack-map/
 author: 李
 ---
 
@@ -375,4 +375,4 @@ AI 红队攻击已经从"让模型说错一句话"发展到"让系统在正常�
 - NVIDIA Garak：<https://github.com/NVIDIA/garak>
 - OWASP LLM Top 10：<https://llmtop10.com>
 - OWASP Agentic AI Threats：<https://owasp.org/www-project-agentic-ai-threats/>
-- Blue41/Bunq 间接提示注入案例：<https://sbookworm.github.io/llm-study/blue41-bunq-prompt-injection/>
+- Blue41/Bunq 间接提示注入案例：<https://sbookworm.github.io/ai-learning/blue41-bunq-prompt-injection/>

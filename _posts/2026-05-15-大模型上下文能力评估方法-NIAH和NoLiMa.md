@@ -1,10 +1,10 @@
 ---
 title: "大模型上下文能力评估方法：NIAH和NoLiMa"
 date: 2026-05-15
-categories: [llm-study]
+categories: [ai-learning]
 tags: [LLM学习记录, NIAH, NoLiMa, 上下文窗口, 长上下文, BABILong, Lost-in-the-Middle, 基准测试]
 toc: true
-permalink: /llm-study/niah-nolima-eval/
+permalink: /ai-learning/niah-nolima-eval/
 ---
 
 随着大语言模型的上下文窗口从最初的 4K、8K tokens 一路扩展至 128K、256K 乃至 1M tokens，"能接收多长的上下文"已不再是核心瓶颈。真正的问题是：模型是否真正理解和利用了上下文中的全部信息？为此，学术界提出了一系列专门评估长上下文能力的基准测试，其中最具影响力的两个方向是 NIAH（Needle in a Haystack）和 NoLiMa（Long-Context Evaluation Beyond Literal Matching）。

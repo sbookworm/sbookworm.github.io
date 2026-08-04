@@ -1,10 +1,11 @@
 ---
 title: "LLM 入门知识 — Ollama"
 date: 2026-05-01
-categories: [llm-study]
+categories: [ai-learning]
 tags: [Ollama, 本地部署, 入门]
 toc: true
----
+permalink: /ai-learning/ollama-local-llm-runner/
+
 
 # LLM 入门知识 — Ollama
 
